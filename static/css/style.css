@@ -1,0 +1,84 @@
+/* Custom styles for RecruitShield */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-section {
+    padding: 2rem 0;
+}
+
+.auth-header-text {
+    font-size: 2.5rem;
+}
+
+.form-card {
+    border-radius: 15px;
+}
+
+.ai-textarea {
+    resize: none;
+    border-radius: 10px;
+}
+
+.ai-select {
+    border-radius: 10px;
+}
+
+.analyze-btn {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.analyze-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.analyze-btn:active {
+    transform: translateY(0);
+}
+
+/* Dark mode adjustments */
+[data-bs-theme="dark"] {
+    background-color: #1a1a2e;
+    color: #eee;
+}
+
+[data-bs-theme="dark"] .card {
+    background-color: #16213e;
+    color: #eee;
+}
+
+[data-bs-theme="dark"] .bg-light {
+    background-color: #1a1a2e !important;
+}
+
+[data-bs-theme="dark"] .text-muted {
+    color: #adb5bd !important;
+}
+
+.transition-theme {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Modal styles */
+.modal-content {
+    border-radius: 15px;
+}
+
+#resultIcon {
+    font-size: 4rem;
+}
+
+/* Spinner animation */
+.spinner-border {
+    animation: spinner-border 0.8s linear infinite;
+}
+
+@keyframes spinner-border {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
